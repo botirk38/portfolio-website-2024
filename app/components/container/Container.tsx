@@ -90,7 +90,7 @@ const Container: React.FC<ContainerProps> = ({
         return color;
     };
 
-    const blurClasses = blur ? "backdrop-blur-[64px]" : "";
+    const blurClasses = blur ? "backdrop-blur-3xl" : "";
 
     return (
         <div
