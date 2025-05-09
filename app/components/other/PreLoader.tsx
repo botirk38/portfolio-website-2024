@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import Logo from "../svg/Logo";
 
 const PreLoader: React.FC = () => {
   useEffect(() => {
@@ -17,7 +16,7 @@ const PreLoader: React.FC = () => {
           duration: 1.5,
           delay: 1,
           y: 70,
-          skewY: 10,
+          skewY: 0,
           stagger: 0.4,
           ease: "Power3.easeOut",
         })
