@@ -47,7 +47,7 @@ const PreLoader: React.FC = () => {
             ease: "Power3.easeOut",
             onComplete: mobileLanding,
           },
-          "-=2"
+          "-=2",
         )
         .to(".preloader", {
           duration: 0,
