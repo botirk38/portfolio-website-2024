@@ -18,11 +18,14 @@ const AnimatedTools: React.FC<AnimatedToolsProps> = ({
 }) => {
   return (
     <div className={className}>
-      {children.map((child, index) => (
-        <Animated key={index} delay={delay + index * stepSize}>
-          {cloneElement(child, { size: iconSize })}
-        </Animated>
-      ))}
+      {children.map((child, index) => {
+        if (React.isValidElement(child)) {
+          <Animated key={index} delay={delay + index * stepSize}>
+            {cloneElement(child, { size: iconSize })}
+          </Animated>;
+        }
+        return null;
+      })}
     </div>
   );
 };
