@@ -1,15 +1,15 @@
 import "./globals.css";
 import React, { ReactNode } from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
-const syne = Inter({
+const inter = Inter({
   subsets: ["latin"],
   display: "block",
   weight: ["400", "500", "600", "700", "800"],
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   metadataBase: new URL("https://www.example.com/"),
   title: "Botir Khaltaev - Portfolio",
   description: "A portfolio website for Botir Khaltaev",
@@ -41,7 +41,6 @@ export const metadata: Metadata = {
     "software developer portfolio",
     "backend engineer portfolio",
   ],
-  colorScheme: "dark",
   robots: {
     index: true,
     follow: true,
@@ -58,6 +57,10 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
+const viewport: Viewport = {
+  colorScheme: "dark",
+};
+
 type RootLayoutProps = {
   children: ReactNode;
 };
@@ -66,10 +69,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+        className={`${inter.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
       >
         {children}
       </body>
     </html>
   );
 }
+
+export { metadata, viewport };
