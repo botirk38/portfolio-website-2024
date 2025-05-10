@@ -13,6 +13,9 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./*"]
+    },
     "strict": true,
     "target": "esnext",
     "types": ["bun-types"],
