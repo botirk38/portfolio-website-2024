@@ -5,7 +5,7 @@ import Animated from "./Animated";
 type AnimatedToolsProps = {
   delay: number;
   stepSize: number;
-  children: React.ReactElement<React.ComponentProps<IconBaseProps>>[];
+  children: React.ReactElement<IconBaseProps>[];
   iconSize: number;
   className?: string;
 };
