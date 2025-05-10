@@ -1,11 +1,10 @@
 import React, { cloneElement } from "react";
-import { IconType } from "react-icons/fa";
 import Animated from "./Animated";
 
 type AnimatedToolsProps = {
   delay: number;
   stepSize: number;
-  children: React.ReactElement<React.ComponentProps<IconType>>[];
+  children: React.ReactNode[];
   iconSize: number;
   className?: string;
 };
