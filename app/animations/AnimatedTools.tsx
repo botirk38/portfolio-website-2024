@@ -1,10 +1,11 @@
 import React, { cloneElement } from "react";
+import type { IconBaseProps } from "react-icons";
 import Animated from "./Animated";
 
 type AnimatedToolsProps = {
   delay: number;
   stepSize: number;
-  children: React.ReactNode[];
+  children: React.ReactElement<React.ComponentProps<IconBaseProps>>[];
   iconSize: number;
   className?: string;
 };
@@ -18,14 +19,11 @@ const AnimatedTools: React.FC<AnimatedToolsProps> = ({
 }) => {
   return (
     <div className={className}>
-      {children.map((child, index) => {
-        if (React.isValidElement(child)) {
-          <Animated key={index} delay={delay + index * stepSize}>
-            {cloneElement(child, { size: iconSize })}
-          </Animated>;
-        }
-        return null;
-      })}
+      {children.map((child, index) => (
+        <Animated key={index} delay={delay + index * stepSize}>
+          {cloneElement(child, { size: iconSize })}
+        </Animated>
+      ))}
     </div>
   );
 };
