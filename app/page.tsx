@@ -18,7 +18,7 @@ import Footer from "./sections/Footer";
 import Tools from "./sections/Tools";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
