@@ -10,7 +10,7 @@
         "@fortawesome/react-fontawesome": "^0.2.2",
         "@react-buddy/ide-toolbox-next": "^2.4.1",
         "@react-three/drei": "^10.0.7",
-        "@react-three/fiber": "^9.1.2",
+        "@react-three/fiber": "^9.0.0",
         "@react-three/rapier": "^2.1.0",
         "@tailwindcss/line-clamp": "^0.4.4",
         "framer-motion": "^12.10.5",
