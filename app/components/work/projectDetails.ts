@@ -1,4 +1,12 @@
-import { SiReact, SiTailwindcss, SiVite, SiHono } from "react-icons/si";
+import {
+  SiReact,
+  SiTailwindcss,
+  SiVite,
+  SiHono,
+  SiPython,
+  SiTypescript,
+  SiFastapi,
+} from "react-icons/si";
 import { RiVercelFill } from "react-icons/ri";
 import { IconType } from "react-icons";
 
@@ -32,6 +40,24 @@ export const projects: ProjectProps[] = [
     github: "https://github.com/Egham-7/student-copilot",
     demo: "https://www.studentcopilot.app/",
     image: "/projects/StudentCopilot.png",
+    available: true,
+  },
+
+  {
+    id: 1,
+    name: "ReadYou",
+    description: "AI Readme Generator for your repos.",
+    technologies: [SiPython, SiReact, SiTypescript, SiFastapi],
+    techNames: ["Python", "React", "TypeScript", "FastAPI"],
+    techLinks: [
+      "https://www.python.org/", // Python
+      "https://reactjs.org/", // React
+      "https://www.typescriptlang.org/", // TypeScript
+      "https://fastapi.tiangolo.com/", // FastAPI
+    ],
+    github: "https://github.com/Egham-7/readme-ai",
+    demo: "https://readyou.uk",
+    image: "/projects/ReadYou.jpeg",
     available: true,
   },
 ];
