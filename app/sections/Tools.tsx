@@ -44,8 +44,8 @@ const Tools = () => {
           charSpace={"mr-[0.001em]"}
         />
 
-        <div className="mx-auto w-[100%] justify-center lg:max-w-[1200px]">
-          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
+        <div className="mx-auto w-full justify-center lg:max-w-[1200px]">
+          <div className="mb-10 flex w-full flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
             <AnimatedBody delay={0.2} text="Frontend" />
             <div>
               <AnimatedTools
@@ -63,7 +63,7 @@ const Tools = () => {
               </AnimatedTools>
             </div>
           </div>
-          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
+          <div className="mb-10 flex w-full flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
             <AnimatedBody delay={0.3} text="Backend" />
             <div>
               <AnimatedTools
@@ -87,7 +87,7 @@ const Tools = () => {
               </AnimatedTools>
             </div>
           </div>
-          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
+          <div className="mb-10 flex w-full flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
             <AnimatedBody delay={0.4} text="Other" />
             <div>
               <AnimatedTools

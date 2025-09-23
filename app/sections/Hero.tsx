@@ -7,7 +7,7 @@ import AnimatedTitle from "../animations/AnimatedTitle";
 const Hero = () => {
   return (
     <motion.section
-      className="relative z-10 flex h-[100vh] w-full justify-center"
+      className="relative z-10 flex h-screen w-full justify-center"
       id="home"
       initial="initial"
       animate="animate"
